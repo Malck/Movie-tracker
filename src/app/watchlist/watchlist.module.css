@@ -1,0 +1,129 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #a0aec0;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.loading {
+  color: #a0aec0;
+  text-align: center;
+  padding: 4rem;
+}
+
+/* Empty state */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  font-size: 4rem;
+}
+
+.emptyState h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.emptyState p {
+  color: #a0aec0;
+  max-width: 400px;
+}
+
+.emptyButton {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #3182ce;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.emptyButton:hover {
+  background-color: #2b6cb0;
+}
+
+/* Filtres */
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid #4a5568;
+  background-color: transparent;
+  color: #a0aec0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.filterButton:hover {
+  border-color: #718096;
+  color: white;
+}
+
+.filterActive {
+  background-color: #3182ce;
+  border-color: #3182ce;
+  color: white;
+}
+
+.filterCount {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 9999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.emptyFilter {
+  text-align: center;
+  color: #a0aec0;
+  padding: 3rem;
+}
+
+/* Grille films */
+.movieGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .movieGrid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 768px) {
+  .movieGrid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1024px) {
+  .movieGrid { grid-template-columns: repeat(5, 1fr); }
+}

@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.watchedOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.5rem;
+}
+
+.actions button {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: opacity 0.2s;
+}
+
+.actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.watchedButton {
+  background-color: #2f855a;
+  color: white;
+}
+
+.watchedButton:hover {
+  background-color: #276749;
+}
+
+.deleteButton {
+  background-color: #4a5568;
+  color: #fc8181;
+}
+
+.deleteButton:hover {
+  background-color: #c53030;
+  color: white;
+}
+
+/* Confirmation suppression */
+.confirmRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.confirmRow span {
+  font-size: 0.75rem;
+  color: #fc8181;
+  flex: 1;
+}
+
+.confirmYes {
+  background-color: #c53030 !important;
+  color: white !important;
+  flex: 1;
+}
+
+.confirmNo {
+  background-color: #4a5568 !important;
+  color: white !important;
+  flex: 1;
+}
