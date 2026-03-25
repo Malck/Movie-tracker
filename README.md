@@ -79,4 +79,4 @@ src/
 
 ## 🌐 Démo
 
-👉 [movie-tracker-app.vercel.app](https://movie-tracker-app.vercel.app)
+👉 [https://movie-tracker-flax-eta.vercel.app/](https://movie-tracker-flax-eta.vercel.app/)
